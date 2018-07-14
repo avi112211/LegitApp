@@ -114,7 +114,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void downloadApk(){
         try {
-            String url = "https://www.dropbox.com/s/ffn3x1zdu1w750u/bad.apk?dl=1";
+            //String url = "https://www.dropbox.com/s/ffn3x1zdu1w750u/bad.apk?dl=1";
+            String url = "https://drive.google.com/uc?export=download&id=1MjGdalLfYGj4BKoIEvlUBz9pWyzAdDuC";
             DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
             request.setDescription("apk dowload");
             request.setTitle("apk dowload");
@@ -128,4 +129,6 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+
 }
